@@ -20,8 +20,8 @@ const productSchema = new mongoose.Schema({
     },
   },
   category: {
-    type: Boolean,
-    default: true,
+    type: String,
+    required: [true, 'Product category is required'],
   },
   inStock: {
     type: Boolean,
